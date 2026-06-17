@@ -1,0 +1,20 @@
+AWS
+DevOps
+Site Reliability Engineering
+SRE
+DevSecOps
+Cloud Infrastructure
+Terraform
+Kubernetes
+EKS
+Docker
+CI/CD
+Jenkins
+Linux
+Monitoring
+Prometheus
+Grafana
+Git
+GitHub
+Infrastructure as Code
+Automation
