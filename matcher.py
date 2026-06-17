@@ -3,25 +3,17 @@ def load_resume():
         return f.read().lower()
 
 
-def score_job(job_title, resume):
+def score_job(title, resume):
 
-    job_title = job_title.lower()
+    title = title.lower()
     resume = resume.lower()
 
-    skills = resume.split(",")
+    skills = resume.split("\n")
 
     score = 0
 
     for skill in skills:
-        if skill.strip() in job_title:
-            score += 12
-
-    # bonus scoring logic
-    if "aws" in job_title:
-        score += 15
-    if "devops" in job_title:
-        score += 10
-    if "remote" in job_title:
-        score += 10
+        if skill.strip() and skill.strip() in title:
+            score += 10
 
     return min(score, 100)
